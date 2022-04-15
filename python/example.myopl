@@ -1,0 +1,155 @@
+# Hi, it is an example how the code works, just near >>> write RUN("example.myopl")
+# In the console you will see immediately some results
+# You can as well write in console instructions after sequence >>>, 
+# and work as well with all that is already declared, or create smth by your own
+
+VAR a = --1 + 2
+VAR c = 7 - 9 
+PRINT(a)
+PRINT(c)
+VAR d = 10 / 4
+VAR e = 7 * (5 - 3)
+PRINT(d)
+PRINT(e)
+VAR f = d + 2 * -3
+PRINT(f)
+VAR nr_mare = 100 * 2.5 / (1 + 3)
+PRINT(nr_mare)
+VAR ridicarea_la_putere = 8 ^ a
+PRINT(ridicarea_la_putere)
+VAR b = IF a == 5 THEN 1
+
+
+# You can do in console for example:
+
+# 10 / c
+# it gives you: -5.0
+
+
+PRINT(a)
+PRINT(c)
+PRINT(b)
+
+
+# this print will be equal with 1, because true = 1, but false = 0
+PRINT(10 == 10 AND 88 == 88)
+PRINT(4 == 9)
+VAR w = 2 + 3 == 5 OR 9 + 78 == 120
+PRINT(w)
+VAR z_z_1 = NOT 0
+PRINT(z_z_1)
+PRINT(TRUE)
+PRINT(FALSE)
+VAR z_z_8888 = FALSE
+PRINT(z_z_8888)
+PRINT(4 >= 9)
+PRINT(152.2 != 152)
+
+
+IF z_z_1 == TRUE THEN PRINT(ridicarea_la_putere)
+IF f >= 1000 THEN PRINT(f / 1000 ) ELIF f < nr_mare / 0.2 THEN PRINT(nr_mare ^ 3)
+IF a == 152 THEN PRINT(77777) ELSE PRINT(NOT NOT w)
+IF 10 / c > 7 AND b != 30 THEN PRINT("STEP RIGHT") ELIF 5000 == ridicarea_la_putere THEN PRINT(VAR t2 = 7) ELSE PRINT(VAR t2 = 2) 
+VAR step = 54
+VAR step_1 = IF step >= 117 THEN 40 ELSE 20
+PRINT(step_1) 
+
+
+
+VAR result = FOR i = 0 TO 10 THEN a * i 
+PRINT (result)
+
+VAR d = WHILE c > 0 THEN PRINT (result - 1)
+
+FOR i = 0 TO 8 INCREMENT 2 THEN PRINT (result - 1)
+
+FUNCTION addition (a, b, c) -> a + c + b
+PRINT(addition(145687, 9, 3333))
+VAR addit_one = addition
+PRINT(addit_one(5,9,4))
+
+VAR program = FUNCTION (each_step) -> each_step / 3 
+PRINT(program(3985))
+
+PRINT([1, 2, 3, 4])
+PRINT([1, 2, 3, 4] + 548465568)
+PRINT([78, 216, 3454] * [996, 645])
+PRINT([78, 216, 3454] * [996, 645] - 4)
+PRINT([78, 216, 3454] - 0)
+PRINT([78, 216, 3454] - -2)
+PRINT([78, 216, 3454] - -1)
+PRINT([78, 216, 3454] * [996, 645] / 0)
+PRINT([78, 216, 3454] * [996, 645] / 3)
+
+
+VAR aaa = 2
+FOR i = 0 TO 3 THEN 
+    PRINT(aaa * i) 
+END
+
+IF aaa >= c THEN
+    PRINT (aaa + 3.5)
+    PRINT (aaa == a)
+END
+
+FOR i = 0 TO 2 THEN 
+    PRINT (aaa + 0.333)
+    FOR i = 0 TO 2 THEN 
+        PRINT(aaa * i) 
+    END
+END
+
+FUNCTION operation(d, e, g, h) 
+    PRINT(d * (e + g) / h - 50)
+    PRINT(aaa)
+END
+
+FOR i = 0 TO 3 THEN 
+    PRINT(aaa + 0.333)
+    IF aaa >= c THEN
+        PRINT(operation(aaa, 100, 400, 2))
+    END
+END
+
+FUNCTION multiply(x, y)
+    RETURN x * y
+END
+
+FUNCTION smth(x)
+    IF x > 0 THEN 
+        RETURN
+    END
+    PRINT(x)
+END
+PRINT(multiply(54, 68))
+PRINT(VAR bbb = smth(2))
+
+FOR i = 0 TO 4 THEN 
+    IF multiply(64, 23) >= 522 THEN
+        PRINT("STEP LEFT")
+        BREAK
+    END
+    PRINT("STEP LEFT")
+    IF multiply(64, 23) < 499 THEN
+        PRINT("STEP UP")
+        CONTINUE
+    END
+    PRINT("STEP UP")
+END
+PRINT(multiply(35, 28888))
+
+FOR i = 0 TO 4 THEN 
+    IF multiply(64, 23) <= 522 THEN
+        PRINT("STEP LEFT")
+        BREAK
+    END
+    PRINT("STEP DOWN")
+    IF multiply(64, 23) > 499 THEN
+        PRINT("STEP UP")
+        CONTINUE
+    END
+    PRINT("STEP RIGHT")
+END
+
+
+
